@@ -19,8 +19,10 @@ export default function NavbarMenu() {
             </NavDropdown>
           </Nav>
           <Nav>
-            <Nav.Link onClick={() => router.push("/login")}>Login</Nav.Link>
-            <Nav.Link onClick={() => router.push("/register")}>
+            <Nav.Link onClick={() => router.push("/auth/login")}>
+              Login
+            </Nav.Link>
+            <Nav.Link onClick={() => router.push("/auth/register")}>
               Register
             </Nav.Link>
           </Nav>
