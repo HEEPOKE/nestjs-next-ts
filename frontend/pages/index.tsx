@@ -5,14 +5,12 @@ import styles from "../styles/Navbar.module.css";
 import { useRouter } from "next/router";
 import { mainMenu as menuLinks, site } from "../config/navbar";
 import menuNavbar from "../interface/navbar";
-import navbarMenu from "../components/navbarMenu";
+import NavbarMenu from "../components/NavbarMenu";
 
 export default function Home() {
-  const router = useRouter();
-
   return (
-    <>
-      <navbarMenu />
-    </>
+    <div className="App">
+      <NavbarMenu />
+    </div>
   );
 }
