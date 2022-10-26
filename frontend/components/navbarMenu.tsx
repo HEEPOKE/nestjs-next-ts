@@ -14,7 +14,7 @@ export default function NavbarMenu() {
             <Nav.Link onClick={() => router.push("/")}>Home</Nav.Link>
             <Nav.Link onClick={() => router.push("/store")}>Store</Nav.Link>
             <Nav.Link onClick={() => router.push("/about")}>About</Nav.Link>
-            <NavDropdown title="Dropdown" id="collasible-nav-dropdown">
+            <NavDropdown title="Options" id="collasible-nav-dropdown">
               <NavDropdown.Item href="/create">Create</NavDropdown.Item>
             </NavDropdown>
           </Nav>
