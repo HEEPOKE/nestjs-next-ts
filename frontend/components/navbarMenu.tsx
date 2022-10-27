@@ -12,10 +12,12 @@ export default function NavbarMenu() {
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto">
             <Nav.Link onClick={() => router.push("/")}>Home</Nav.Link>
-            <Nav.Link onClick={() => router.push("/store")}>Store</Nav.Link>
+            <Nav.Link onClick={() => router.push("/Store")}>Store</Nav.Link>
             <Nav.Link onClick={() => router.push("/about")}>About</Nav.Link>
             <NavDropdown title="Options" id="collasible-nav-dropdown">
-              <NavDropdown.Item onClick={() => router.push("/create")}>Create</NavDropdown.Item>
+              <NavDropdown.Item onClick={() => router.push("/Create")}>
+                Create
+              </NavDropdown.Item>
             </NavDropdown>
           </Nav>
           <Nav>
