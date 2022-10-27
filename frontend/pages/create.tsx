@@ -1,7 +1,10 @@
-import React from "react";
+import NavbarMenu from "../components/NavbarMenu";
 
-function create() {
-  return <div>create</div>;
+export default function create() {
+  return (
+    <div>
+      <NavbarMenu />
+    </div>
+  );
 }
 
-export default create;

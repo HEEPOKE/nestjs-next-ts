@@ -1,7 +1,10 @@
-import React from "react";
+import NavbarMenu from "../components/NavbarMenu";
 
-function store() {
-  return <div>store</div>;
+export default function store() {
+  return (
+    <div>
+      <NavbarMenu />
+      ddd
+    </div>
+  );
 }
-
-export default store;

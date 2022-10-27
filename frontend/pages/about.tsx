@@ -1,7 +1,9 @@
-import React from "react";
+import NavbarMenu from "../components/NavbarMenu";
 
-function about() {
-  return <div>about</div>;
+export default function about() {
+  return (
+    <div className="App">
+      <NavbarMenu />
+    </div>
+  );
 }
-
-export default about;
