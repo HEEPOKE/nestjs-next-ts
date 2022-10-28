@@ -1,10 +1,8 @@
 import { Container, Card, Table, Button } from "react-bootstrap";
-import { useRouter } from "next/router";
+import Link from "next/link";
 import NavbarMenu from "../components/navbarMenu";
 
 export default function Store() {
-  const router = useRouter();
-
   return (
     <>
       <NavbarMenu />
@@ -12,12 +10,9 @@ export default function Store() {
       <Container>
         <Card>
           <Card.Body>
-            <Button
-              className="mt-2 mb-2 flaot-end"
-              onClick={() => router.push("/Create")}
-            >
-              create
-            </Button>
+            <Link href="/Create">
+              <Button className="mt-2 mb-2 float-end">create</Button>
+            </Link>
             <Table striped bordered hover variant="dark">
               <thead>
                 <tr className="text-center">
