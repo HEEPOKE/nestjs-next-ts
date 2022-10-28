@@ -16,7 +16,7 @@ export default function Create() {
   };
 
   return (
-    <div>
+    <>
       <NavbarMenu />
       <h2 className="text-dark text-center mt-2">Create</h2>
       <Container>
@@ -48,12 +48,28 @@ export default function Create() {
                     Please Enter Details.
                   </Form.Control.Feedback>
                 </Form.Group>
+                <Form.Group
+                  className="mb-3"
+                  controlId="exampleForm.ControlInput1"
+                >
+                  <Form.Label>Images</Form.Label>
+                  <Form.Control
+                    type="file"
+                    placeholder="Enter Images"
+                    accept="image/*"
+                    multiple
+                    required
+                  />
+                  <Form.Control.Feedback type="invalid">
+                    Please Enter Images.
+                  </Form.Control.Feedback>
+                </Form.Group>
                 <Button type="submit">Submit</Button>
               </Form>
             </Card.Body>
           </Card>
         </Row>
       </Container>
-    </div>
+    </>
   );
 }
