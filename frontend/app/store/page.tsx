@@ -1,5 +1,10 @@
 import React from "react";
+import { Button } from "react-bootstrap";
 
 export default function Storepage() {
-  return <div>storepage</div>;
+  return (
+    <>
+      <Button>dd</Button>
+    </>
+  );
 }
