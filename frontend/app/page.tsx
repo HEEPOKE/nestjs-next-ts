@@ -6,7 +6,7 @@ export default function Home() {
   return (
     <>
       <Menu />
-      <h1 className="text-3xl font-bold underline">Home</h1>
+      <h1 className="text-3xl font-bold">Home</h1>
     </>
   );
 }
