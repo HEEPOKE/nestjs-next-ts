@@ -1,10 +1,11 @@
 import React from "react";
-import { Button } from "react-bootstrap";
+// import Menu from "../../components/navbar/";
 
 export default function Storepage() {
   return (
-    <>
-      <Button>dd</Button>
-    </>
+    <div>
+      {/* <Menu /> */}
+      <h1 className="text-3xl font-bold">store</h1>
+    </div>
   );
 }

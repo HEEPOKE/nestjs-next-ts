@@ -1,6 +1,5 @@
 import React from "react";
-import StorePage from "./store/page";
-import Menu from "../components/navbar";
+import Menu from "../components/navbar/";
 
 export default function Home() {
   return (
