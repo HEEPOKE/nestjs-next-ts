@@ -15,6 +15,11 @@ export default function Menu() {
             Home
           </li>
         </Link>
+        <Link href="/create">
+          <li className="text-center float-left pl-2 pr-2 pt-2 pb-2 font-medium text-2xl text-zinc-50 hover:bg-green-800 cursor-pointer block no-underline">
+           Create
+          </li>
+        </Link>
         <Link href="/store">
           <li className="text-center float-left pl-2 pr-2 pt-2 pb-2 font-medium text-2xl text-zinc-50 hover:bg-green-800 cursor-pointer block no-underline">
             Store

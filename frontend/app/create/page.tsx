@@ -1,5 +1,11 @@
 import React from "react";
+import Menu from "../../components/navbar";
 
 export default function Createpage() {
-  return <div>Createpage</div>;
+  return (
+    <>
+      <Menu />
+      <div>create</div>
+    </>
+  );
 }
