@@ -5,8 +5,8 @@ export default function FormInput() {
   return (
     <>
       <CreateHeader />
-      <div className="relative grid h-screen place-items-center">
-        <div className="max-w-lg w-full justify-center bg-gray-800 rounded-lg mt-3">
+      <div className="relative grid place-items-center">
+        <div className="w-10/12 bg-gray-800 rounded-lg mt-3">
           <div className="">
             <label className="block mb-2 text-sm font-medium text-green-700 dark:text-green-500">
               Your name
