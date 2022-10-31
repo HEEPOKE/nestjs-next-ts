@@ -30,12 +30,12 @@ export default function Menu() {
             About
           </li>
         </Link>
-        <Link href="/register">
+        <Link href="/auth/register">
           <li className="float-right pl-2 pr-2 pt-2 pb-2 font-medium text-2xl text-center text-zinc-50 cursor-pointer no-underline block hover:bg-green-800">
             Register
           </li>
         </Link>
-        <Link href="/login">
+        <Link href="/auth/login">
           <li className="float-right pl-2 pr-2 pt-2 pb-2 font-medium text-2xl text-center text-zinc-50 cursor-pointer no-underline block hover:bg-green-800">
             Login
           </li>
