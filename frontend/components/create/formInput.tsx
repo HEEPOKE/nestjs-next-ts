@@ -1,41 +1,97 @@
+"use client";
+
 import React from "react";
+import { useRouter } from "next/navigation";
 import CreateHeader from "./header";
 
 export default function FormInput() {
+  const router = useRouter();
+
+  const Back = () => {
+    router.back();
+  };
+
   return (
     <>
       <CreateHeader />
       <div className="relative grid place-items-center">
         <div className="w-10/12 bg-gray-800 rounded-lg mt-3">
-          <div className="">
-            <label className="block mb-2 text-sm font-medium text-green-700 dark:text-green-500">
-              Your name
-            </label>
-            <input
-              type="text"
-              id="success"
-              className="bg-green-50 border border-green-500 text-green-900 dark:text-green-400 placeholder-green-700 dark:placeholder-green-500 text-sm rounded-lg focus:ring-green-500 focus:border-green-500 block w-full p-2.5 dark:bg-gray-700 dark:border-green-500"
-              placeholder="Success input"
-            />
-            <p className="mt-2 text-sm text-green-600 dark:text-green-500">
-              <span className="font-medium">Well done!</span> Some success
-              messsage.
-            </p>
-          </div>
-          <div>
-            <label className="block mb-2 text-sm font-medium text-red-700 dark:text-red-500">
-              Your name
-            </label>
-            <input
-              type="text"
-              id="error"
-              className="bg-red-50 border border-red-500 text-red-900 placeholder-red-700 text-sm rounded-lg focus:ring-red-500 dark:bg-gray-700 focus:border-red-500 block w-full p-2.5 dark:text-red-500 dark:placeholder-red-500 dark:border-red-500"
-              placeholder="Error input"
-            />
-            <p className="mt-2 text-sm text-red-600 dark:text-red-500">
-              <span className="font-medium">Oh, snapp!</span> Some error
-              message.
-            </p>
+          <form>
+            <div className="ml-3 mr-3 mt-2">
+              <label className="block mb-2 font-extrabold text-lg text-white">
+                name
+              </label>
+              <input
+                type="text"
+                name="name"
+                className="text-white text-sm rounded-lg block w-full p-2.5 dark:bg-gray-700 dark:border-green-500"
+                placeholder="Enter Name"
+                required
+              />
+            </div>
+            <div className="ml-3 mr-3 mt-2">
+              <label className="block mb-2 font-extrabold text-lg text-white">
+                color
+              </label>
+              <input
+                type="text"
+                name="color"
+                className="text-white text-sm rounded-lg block w-full p-2.5 dark:bg-gray-700 dark:border-green-500"
+                placeholder="Enter Color"
+                required
+              />
+            </div>
+            <div className="ml-3 mr-3 mt-2">
+              <label className="block mb-2 font-extrabold text-lg text-white">
+                category
+              </label>
+              <input
+                type="text"
+                name="category"
+                className="text-white text-sm rounded-lg block w-full p-2.5 dark:bg-gray-700 dark:border-green-500"
+                placeholder="Enter Category"
+                required
+              />
+            </div>
+            <div className="ml-3 mr-3 mt-2">
+              <label className="block mb-2 font-extrabold text-lg text-white">
+                preice
+              </label>
+              <input
+                type="number"
+                name="price"
+                className="text-white text-sm rounded-lg block w-full p-2.5 dark:bg-gray-700 dark:border-green-500"
+                placeholder="Enter Price"
+                min={0}
+                required
+              />
+            </div>
+            <div className="ml-3 mr-3 mt-2">
+              <label className="block mb-2 font-extrabold text-lg text-white">
+                image
+              </label>
+              <input
+                className="block mb-5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 cursor-pointer dark:text-gray-400 focus:outline-none dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400"
+                type="file"
+              />
+            </div>
+            <div className="flex justify-center">
+              <button
+                type="submit"
+                className="w-1/3 text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2"
+              >
+                Save
+              </button>
+            </div>
+          </form>
+          <div className="flex justify-center">
+            <button
+              type="button"
+              className="w-1/3 text-white bg-gray-400 hover:bg-gray-500 focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2"
+              onClick={Back}
+            >
+              Back
+            </button>
           </div>
         </div>
       </div>
