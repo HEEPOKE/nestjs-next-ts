@@ -13,26 +13,26 @@ export default function Loginpage() {
 
   return (
     <div className="relative grid h-screen place-items-center">
-      <div className="align-center w-full max-w-sm bg-white rounded-lg border border-gray-200 shadow-md sm:p-6 md:p-8 dark:bg-gray-800 dark:border-gray-700">
+      <div className="align-center w-full max-w-sm rounded-lg border shadow-md sm:p-6 md:p-8 bg-gray-800 border-gray-700">
         <form className="space-y-6">
-          <h5 className="text-xl font-medium dark:text-white text-center">
+          <h5 className="text-xl font-medium text-center text-white">
             Sign in
           </h5>
           <div>
-            <label className="block mb-2 text-sm font-medium dark:text-gray-300">
+            <label className="block mb-2 text-sm font-medium text-gray-300">
               Your email
             </label>
             <input
               type="email"
               name="email"
               id="email"
-              className="bg-gray-50 border border-gray-300 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white"
+              className="border text-sm rounded-lg block w-full p-2.5 bg-gray-600 border-gray-500 placeholder-gray-400 text-white"
               placeholder="@example.com"
               required
             />
           </div>
           <div>
-            <label className="block mb-2 text-sm font-medium dark:text-gray-300">
+            <label className="block mb-2 text-sm font-medium text-gray-300">
               Your password
             </label>
             <input
@@ -41,7 +41,7 @@ export default function Loginpage() {
               id="password"
               placeholder="••••••••"
               minLength={8}
-              className="bg-gray-50 border border-gray-300 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white"
+              className="border text-sm rounded-lg block w-full p-2.5 bg-gray-600 border-gray-500 placeholder-gray-400 text-white"
               required
             />
           </div>
@@ -52,17 +52,17 @@ export default function Loginpage() {
                   id="remember"
                   type="checkbox"
                   value=""
-                  className="w-4 h-4 bg-gray-50 rounded border border-gray-300 focus:ring-3 focus:ring-blue-300 dark:bg-gray-700 dark:border-gray-600 dark:focus:ring-blue-600 dark:ring-offset-gray-800"
+                  className="w-4 h-4 rounded border bg-gray-700 border-gray-600 focus:ring-blue-600 ring-offset-gray-800"
                   required
                 />
               </div>
-              <label className="ml-2 text-sm font-medium dark:text-gray-300">
+              <label className="ml-2 text-sm font-medium text-gray-300">
                 Remember me
               </label>
             </div>
             <Link
               href="/auth/forgotpassword"
-              className="ml-auto text-sm text-blue-700 hover:underline dark:text-blue-500"
+              className="ml-auto text-sm hover:underline text-blue-500"
             >
               Forgot Password?
             </Link>
@@ -81,11 +81,11 @@ export default function Loginpage() {
         >
           Back
         </button>
-        <div className="text-sm font-medium dark:text-gray-300 mt-1">
+        <div className="text-sm font-medium text-gray-300 mt-1">
           Not registered?{" "}
           <Link
             href="/auth/register"
-            className="text-blue-700 hover:underline dark:text-blue-500"
+            className="text-blue-500 hover:underline"
           >
             Create account
           </Link>

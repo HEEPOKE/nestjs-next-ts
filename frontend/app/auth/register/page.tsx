@@ -1,7 +1,6 @@
 "use client";
 
 import React from "react";
-import Link from "next/link";
 import { useRouter } from "next/navigation";
 
 export default function Registerpage() {
@@ -13,39 +12,39 @@ export default function Registerpage() {
 
   return (
     <div className="relative grid h-screen place-items-center">
-      <div className="align-center w-full max-w-sm rounded-lg border shadow-md sm:p-6 md:p-8 dark:bg-gray-800 dark:border-gray-700">
+      <div className="align-center w-full max-w-sm rounded-lg border shadow-md sm:p-6 md:p-8 bg-gray-800 border-gray-700">
         <form className="space-y-6">
-          <h5 className="text-xl font-medium dark:text-white text-center">
+          <h5 className="text-xl font-medium text-white text-center">
             Register
           </h5>
           <div>
-            <label className="block mb-2 text-sm font-medium dark:text-gray-300">
+            <label className="block mb-2 text-sm font-medium text-gray-300">
               Username
             </label>
             <input
               type="text"
               name="username"
               id="usename"
-              className="border text-sm rounded-lg block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white"
+              className="border text-sm rounded-lg block w-full p-2.5 bg-gray-600 border-gray-500 placeholder-gray-400 text-white"
               placeholder="Enter Username"
               required
             />
           </div>
           <div>
-            <label className="block mb-2 text-sm font-medium dark:text-gray-300">
+            <label className="block mb-2 text-sm font-medium text-gray-300">
               Email
             </label>
             <input
               type="email"
               name="email"
               id="email"
-              className="border text-sm rounded-lg block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white"
+              className="border text-sm rounded-lg block w-full p-2.5 bg-gray-600 border-gray-500 placeholder-gray-400 text-white"
               placeholder="name@company.com"
               required
             />
           </div>
           <div>
-            <label className="block mb-2 text-sm font-medium dark:text-gray-300">
+            <label className="block mb-2 text-sm font-medium text-gray-300">
               Password
             </label>
             <input
@@ -54,12 +53,12 @@ export default function Registerpage() {
               id="password"
               placeholder="••••••••"
               minLength={8}
-              className="border text-sm rounded-lg block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white"
+              className="border text-sm rounded-lg block w-full p-2.5 bg-gray-600 border-gray-500 placeholder-gray-400 text-white"
               required
             />
           </div>
           <div>
-            <label className="block mb-2 text-sm font-medium dark:text-gray-300">
+            <label className="block mb-2 text-sm font-medium text-gray-300">
               Confirm password
             </label>
             <input
@@ -68,13 +67,13 @@ export default function Registerpage() {
               id="password"
               placeholder="••••••••"
               minLength={8}
-              className="border text-sm rounded-lg block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white"
+              className="border text-sm rounded-lg block w-full p-2.5 bg-gray-600 border-gray-500 placeholder-gray-400 text-white"
               required
             />
           </div>
           <button
             type="submit"
-            className="w-full text-white hover:bg-blue-800 focus:ring-4 focus:outline-none font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700"
+            className="w-full text-white hover:bg-blue-800 focus:ring-4 focus:outline-none font-medium rounded-lg text-sm px-5 py-2.5 text-center bg-blue-700"
           >
             Submit
           </button>
