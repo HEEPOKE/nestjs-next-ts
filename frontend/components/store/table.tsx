@@ -7,7 +7,7 @@ export default function Table() {
         <div className="relative">
           <div className="flex absolute inset-y-0 items-center">
             <svg
-              className="w-5 h-5 ml-2 text-gray-500 dark:text-gray-400"
+              className="w-5 h-5 ml-2 text-gray-400"
               aria-hidden="true"
               fill="currentColor"
               viewBox="0 0 20 20"
@@ -23,13 +23,13 @@ export default function Table() {
           <input
             type="text"
             id="table-search"
-            className="block p-2 pl-10 w-80 text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white"
+            className="block p-2 pl-10 w-80 text-sm rounded-lg border bg-gray-700 border-gray-600 placeholder-gray-400 text-white"
             placeholder="Search for items"
           />
         </div>
       </div>
-      <table className="w-full text-sm text-left text-gray-500 dark:text-gray-400">
-        <thead className="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
+      <table className="w-full text-sm text-left text-gray-400">
+        <thead className="text-xs uppercase bg-gray-700 text-gray-400">
           <tr className="text-center">
             <th scope="col" className="p-4">
               #
@@ -52,11 +52,11 @@ export default function Table() {
           </tr>
         </thead>
         <tbody className="text-center">
-          <tr className="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
+          <tr className="border-b bg-gray-800 border-gray-700 hover:bg-gray-600">
             <td className="p-4 w-4">1</td>
             <th
               scope="row"
-              className="py-4 px-6 font-medium text-gray-900 whitespace-nowrap dark:text-white"
+              className="py-4 px-6 font-medium whitespace-nowrap text-white"
             >
               Apple MacBook Pro 17
             </th>
@@ -78,11 +78,11 @@ export default function Table() {
               </button>
             </td>
           </tr>
-          <tr className="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
+          <tr className="border-b bg-gray-800 border-gray-700 hover:bg-gray-600">
             <td className="p-4 w-4">2</td>
             <th
               scope="row"
-              className="py-4 px-6 font-medium text-gray-900 whitespace-nowrap dark:text-white"
+              className="py-4 px-6 font-medium whitespace-nowrap text-white"
             >
               Microsoft Surface Pro
             </th>
