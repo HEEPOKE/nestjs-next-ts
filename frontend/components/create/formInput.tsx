@@ -22,7 +22,7 @@ export default function FormInput() {
               <input
                 type="text"
                 name="name"
-                className="text-sm rounded-lg block w-full p-2.5 dark:bg-gray-700 dark:border-green-500"
+                className="text-sm rounded-lg block w-full p-2.5 bg-gray-600 border-gray-500 placeholder-gray-400 text-white"
                 placeholder="Enter Name"
                 required
               />
@@ -34,7 +34,7 @@ export default function FormInput() {
               <input
                 type="text"
                 name="color"
-                className="text-sm rounded-lg block w-full p-2.5 dark:bg-gray-700 dark:border-green-500"
+                className="text-sm rounded-lg block w-full p-2.5 bg-gray-600 border-gray-500 placeholder-gray-400 text-white"
                 placeholder="Enter Color"
                 required
               />
@@ -46,7 +46,7 @@ export default function FormInput() {
               <input
                 type="text"
                 name="category"
-                className="text-sm rounded-lg block w-full p-2.5 dark:bg-gray-700 dark:border-green-500"
+                className="text-sm rounded-lg block w-full p-2.5 bg-gray-600 border-gray-500 placeholder-gray-400 text-white"
                 placeholder="Enter Category"
                 required
               />
@@ -58,7 +58,7 @@ export default function FormInput() {
               <input
                 type="number"
                 name="price"
-                className="text-sm rounded-lg block w-full p-2.5 dark:bg-gray-700 dark:border-green-500"
+                className="text-sm rounded-lg block w-full p-2.5 bg-gray-600 border-gray-500 placeholder-gray-400 text-white"
                 placeholder="Enter Price"
                 min={0}
                 required
@@ -69,7 +69,7 @@ export default function FormInput() {
                 image
               </label>
               <input
-                className="block mb-5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 cursor-pointer dark:text-gray-400 focus:outline-none dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400"
+                className="block mb-5 w-full text-sm rounded-lg border cursor-pointer text-gray-400 focus:outline-none bg-gray-600 border-gray-500 placeholder-gray-400"
                 type="file"
                 name="image"
                 accept="image/*"
